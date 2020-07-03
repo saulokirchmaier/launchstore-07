@@ -1,0 +1,12 @@
+<!-- extender o layout pronto-->
+{% extends "layout.njk" %}
+{# Importar a macro #}
+{% import "parts/section-products.njk" as section %}
+
+<!-- bloco conteudo -->
+{% block content %}
+
+    {{ section.products('Últimos Produtos', 'container', products )}}
+
+   
+{% endblock content %}
